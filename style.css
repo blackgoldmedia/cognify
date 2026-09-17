@@ -842,3 +842,107 @@ footer {
 .test-button:hover {
     color: #f0c75a;
 }
+
+/* =========================
+   PERSONALITY TEST
+========================= */
+
+.personality-options {
+    display: grid;
+    gap: 12px;
+}
+
+.personality-option {
+    width: 100%;
+    padding: 20px 22px;
+
+    background: #151515;
+    border: 1px solid #292929;
+
+    color: #ddd;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.personality-option:hover {
+    border-color: #d6a62c;
+}
+
+.personality-option.selected {
+    background: #211c10;
+    border-color: #d6a62c;
+    color: #fff;
+}
+
+
+/* PERSONALITY PROGRESS */
+
+#personalityProgress {
+    width: 0%;
+    height: 100%;
+
+    background: #d6a62c;
+
+    transition: width 0.3s;
+}
+
+
+/* RESULT ICON */
+
+.personality-result-icon {
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+
+.personality-result-icon + h2 {
+    color: #d6a62c;
+    font-size: 35px;
+}
+
+
+/* TRAITS */
+
+.personality-traits {
+    max-width: 500px;
+    margin: 35px auto;
+
+    display: grid;
+    gap: 12px;
+}
+
+
+.personality-traits div {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 18px;
+
+    background: #151515;
+    border: 1px solid #292929;
+}
+
+
+.personality-traits span {
+    color: #888;
+}
+
+
+.personality-traits strong {
+    color: #d6a62c;
+}
+
+
+@media (max-width: 600px) {
+
+    .personality-option {
+        padding: 17px;
+    }
+
+}
