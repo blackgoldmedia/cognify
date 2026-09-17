@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Test | Cognify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            COGNIFY
+        </a>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="index.html#psychology">Psychology</a>
+            <a href="index.html#tests">Tests</a>
+            <a href="index.html#zodiac">Zodiac</a>
+            <a href="index.html#knowledge">Knowledge</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="test-page">
+
+    <div class="container">
+
+        <!-- INTRO -->
+
+        <div id="memoryIntro" class="test-intro">
+
+            <p class="section-label">
+                COGNIFY TEST
+            </p>
+
+            <h1>
+                Memory Test
+            </h1>
+
+            <p>
+                Uji kemampuanmu dalam mengingat informasi
+                dalam waktu singkat.
+            </p>
+
+            <div class="test-info">
+
+                <div>
+                    <strong>10</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div>
+                    <strong>5</strong>
+                    <span>Minutes</span>
+                </div>
+
+                <div>
+                    <strong>Memory</strong>
+                    <span>Focus</span>
+                </div>
+
+            </div>
+
+            <button id="startMemoryBtn" class="primary-button">
+                Start Test →
+            </button>
+
+        </div>
+
+
+        <!-- QUIZ -->
+
+        <div id="memoryQuiz" style="display:none;">
+
+            <div class="test-top">
+
+                <div>
+                    Question
+                    <strong>
+                        <span id="memoryCurrent">1</span>/10
+                    </strong>
+                </div>
+
+                <div id="memoryTimer">
+                    05:00
+                </div>
+
+            </div>
+
+
+            <div class="progress-container">
+
+                <div
+                    id="memoryProgress"
+                    class="progress-bar">
+                </div>
+
+            </div>
+
+
+            <div class="memory-card">
+
+                <p class="section-label">
+                    REMEMBER THIS
+                </p>
+
+                <div id="memoryDisplay"
+                     class="memory-display">
+                </div>
+
+                <p id="memoryInstruction"
+                   class="memory-instruction">
+                    Ingat informasi di atas.
+                </p>
+
+            </div>
+
+
+            <div id="memoryOptions"
+                 class="memory-options">
+            </div>
+
+
+            <button id="memoryNext"
+                    class="primary-button"
+                    style="display:none; margin-top:25px;">
+                Next →
+            </button>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div id="memoryResult"
+             class="test-result"
+             style="display:none;">
+
+            <p class="section-label">
+                TEST COMPLETE
+            </p>
+
+            <h1>
+                Your Memory Result
+            </h1>
+
+            <div class="result-score">
+
+                <span id="memoryScore">
+                    0
+                </span>
+
+                <small>
+                    / 10
+                </small>
+
+            </div>
+
+            <h2 id="memoryLevel">
+                Good
+            </h2>
+
+            <p id="memoryMessage">
+            </p>
+
+            <div class="result-actions">
+
+                <button
+                    id="memoryRestart"
+                    class="primary-button">
+                    Try Again
+                </button>
+
+                <a
+                    href="index.html"
+                    class="secondary-button">
+                    Back to Cognify
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h2>COGNIFY</h2>
+
+        <p>
+            Understand. Think. Discover.
+        </p>
+
+        <p>
+            © 2026 Cognify. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="memory.js"></script>
+
+</body>
+</html>
