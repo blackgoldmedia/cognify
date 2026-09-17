@@ -946,3 +946,102 @@ footer {
     }
 
 }
+/* MEMORY TEST */
+
+.memory-card {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px 25px;
+    background: #111;
+    border: 1px solid #292929;
+    text-align: center;
+}
+
+.memory-display {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    color: #d6a62c;
+
+    margin: 25px 0;
+}
+
+.memory-instruction {
+    color: #888;
+}
+
+.memory-options {
+    max-width: 650px;
+    margin: 25px auto;
+
+    display: grid;
+    gap: 12px;
+}
+
+.memory-option {
+    width: 100%;
+
+    padding: 18px;
+
+    background: #151515;
+
+    border: 1px solid #292929;
+
+    color: #ddd;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.memory-option:hover {
+    border-color: #d6a62c;
+}
+
+.memory-option.selected {
+    border-color: #d6a62c;
+}
+
+.memory-option.correct {
+    background: #172016;
+    border-color: #4c8f4c;
+}
+
+.memory-option.wrong {
+    background: #241414;
+    border-color: #9b4444;
+}
+
+.memory-option:disabled {
+    cursor: default;
+}
+
+#memoryTimer {
+    color: #d6a62c;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    .memory-card {
+        padding: 25px 15px;
+    }
+
+    .memory-display {
+        font-size: 21px;
+        letter-spacing: 2px;
+    }
+
+    .memory-option {
+        padding: 16px;
+    }
+
+}
