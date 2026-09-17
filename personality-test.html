@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personality Test — Cognify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo">
+                COGNI<span>FY</span>
+            </a>
+
+            <nav class="navigation">
+
+                <a href="index.html">Home</a>
+                <a href="index.html#psychology">Psychology</a>
+                <a href="iq-test.html">Tests</a>
+                <a href="index.html#zodiac">Zodiac</a>
+                <a href="index.html#knowledge">Knowledge</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="quiz-page">
+
+            <div class="container">
+
+                <!-- INTRO -->
+
+                <div class="quiz-intro" id="personalityIntro">
+
+                    <p class="small-title">
+                        COGNIFY SELF-DISCOVERY
+                    </p>
+
+                    <h1>
+                        Personality Test
+                    </h1>
+
+                    <p>
+                        Jawab berdasarkan apa yang paling
+                        menggambarkan dirimu sehari-hari.
+                    </p>
+
+
+                    <div class="quiz-info">
+
+                        <div>
+                            <strong>12</strong>
+                            <span>Pernyataan</span>
+                        </div>
+
+                        <div>
+                            <strong>5</strong>
+                            <span>Menit</span>
+                        </div>
+
+                        <div>
+                            <strong>4</strong>
+                            <span>Profil</span>
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="quiz-start"
+                        id="startPersonality">
+
+                        Mulai Test →
+
+                    </button>
+
+
+                    <p class="quiz-note">
+
+                        Tes ini dibuat untuk hiburan dan
+                        refleksi diri. Hasilnya bukan diagnosis
+                        psikologis atau penilaian klinis.
+
+                    </p>
+
+                </div>
+
+
+                <!-- TEST -->
+
+                <div
+                    class="quiz-box"
+                    id="personalityBox">
+
+                    <div class="quiz-top">
+
+                        <span id="personalityNumber">
+                            Pernyataan 1 / 12
+                        </span>
+
+                        <span id="personalityTimer">
+                            05:00
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress">
+
+                        <div
+                            id="personalityProgress">
+                        </div>
+
+                    </div>
+
+
+                    <div class="question-box">
+
+                        <p
+                            class="question-category"
+                            id="personalityCategory">
+
+                            SELF DISCOVERY
+
+                        </p>
+
+
+                        <h2 id="personalityQuestion">
+
+                            Pertanyaan akan muncul di sini.
+
+                        </h2>
+
+                    </div>
+
+
+                    <div
+                        class="personality-options"
+                        id="personalityOptions">
+
+                    </div>
+
+
+                    <button
+                        class="next-button"
+                        id="personalityNext"
+                        disabled>
+
+                        Berikutnya →
+
+                    </button>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div
+                    class="result-box"
+                    id="personalityResult">
+
+                    <p class="small-title">
+                        YOUR PROFILE
+                    </p>
+
+
+                    <h1>
+                        Your Personality
+                    </h1>
+
+
+                    <div class="personality-result-icon">
+                        🧠
+                    </div>
+
+
+                    <h2 id="personalityTitle">
+                        Explorer
+                    </h2>
+
+
+                    <p id="personalityDescription">
+
+                        Deskripsi hasil akan muncul di sini.
+
+                    </p>
+
+
+                    <div class="personality-traits">
+
+                        <div>
+                            <span>Curiosity</span>
+                            <strong id="traitCuriosity">0%</strong>
+                        </div>
+
+                        <div>
+                            <span>Social Energy</span>
+                            <strong id="traitSocial">0%</strong>
+                        </div>
+
+                        <div>
+                            <span>Focus</span>
+                            <strong id="traitFocus">0%</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-buttons">
+
+                        <button
+                            class="quiz-start"
+                            id="restartPersonality">
+
+                            Coba Lagi
+
+                        </button>
+
+
+                        <a
+                            href="index.html"
+                            class="btn secondary">
+
+                            Kembali ke Home
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="copyright">
+
+            © 2026 Cognify. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
