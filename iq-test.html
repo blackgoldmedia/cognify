@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IQ-Style Test — Cognify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo">
+                COGNI<span>FY</span>
+            </a>
+
+            <nav class="navigation">
+
+                <a href="index.html">Home</a>
+                <a href="index.html#psychology">Psychology</a>
+                <a href="iq-test.html">Tests</a>
+                <a href="index.html#zodiac">Zodiac</a>
+                <a href="index.html#knowledge">Knowledge</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- IQ TEST -->
+
+    <main>
+
+        <section class="quiz-page">
+
+            <div class="container">
+
+                <!-- INTRO -->
+
+                <div class="quiz-intro" id="quizIntro">
+
+                    <p class="small-title">
+                        COGNIFY TEST
+                    </p>
+
+                    <h1>
+                        IQ-Style Test
+                    </h1>
+
+                    <p>
+                        Uji kemampuan logika, pola, dan
+                        penalaranmu melalui beberapa pertanyaan.
+                    </p>
+
+                    <div class="quiz-info">
+
+                        <div>
+                            <strong>10</strong>
+                            <span>Pertanyaan</span>
+                        </div>
+
+                        <div>
+                            <strong>10</strong>
+                            <span>Menit</span>
+                        </div>
+
+                        <div>
+                            <strong>1</strong>
+                            <span>Kesempatan</span>
+                        </div>
+
+                    </div>
+
+                    <button class="quiz-start" id="startQuiz">
+                        Mulai Test →
+                    </button>
+
+                    <p class="quiz-note">
+                        Ini adalah tes bergaya IQ untuk hiburan
+                        dan latihan penalaran, bukan pengukuran
+                        IQ klinis atau tes IQ terstandarisasi.
+                    </p>
+
+                </div>
+
+
+                <!-- QUIZ -->
+
+                <div class="quiz-box" id="quizBox">
+
+                    <div class="quiz-top">
+
+                        <span id="questionNumber">
+                            Pertanyaan 1 / 10
+                        </span>
+
+                        <span id="timer">
+                            10:00
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress">
+
+                        <div id="progressBar"></div>
+
+                    </div>
+
+
+                    <div class="question-box">
+
+                        <p class="question-category" id="questionCategory">
+                            LOGIC
+                        </p>
+
+                        <h2 id="questionText">
+                            Pertanyaan akan muncul di sini.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="answers" id="answers">
+
+                    </div>
+
+
+                    <button
+                        class="next-button"
+                        id="nextButton"
+                        disabled>
+
+                        Berikutnya →
+
+                    </button>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div class="result-box" id="resultBox">
+
+                    <p class="small-title">
+                        TEST COMPLETE
+                    </p>
+
+                    <h1>
+                        Your Result
+                    </h1>
+
+                    <div class="score-circle">
+
+                        <span id="score">
+                            0
+                        </span>
+
+                        <small>
+                            / 10
+                        </small>
+
+                    </div>
+
+
+                    <h2 id="resultTitle">
+                        Good Job!
+                    </h2>
+
+                    <p id="resultDescription">
+                        Hasilmu akan muncul di sini.
+                    </p>
+
+
+                    <div class="result-buttons">
+
+                        <button
+                            class="quiz-start"
+                            id="restartQuiz">
+
+                            Coba Lagi
+
+                        </button>
+
+                        <a
+                            href="index.html"
+                            class="btn secondary">
+
+                            Kembali ke Home
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="copyright">
+
+            © 2026 Cognify. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
