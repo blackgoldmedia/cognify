@@ -831,3 +831,14 @@ footer {
     }
 
 }
+.test-button {
+    display: inline-block;
+    color: #d6a62c;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.test-button:hover {
+    color: #f0c75a;
+}
