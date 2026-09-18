@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Logic Test | Cognify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">COGNIFY</a>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="index.html#psychology">Psychology</a>
+            <a href="index.html#tests">Tests</a>
+            <a href="index.html#zodiac">Zodiac</a>
+            <a href="index.html#knowledge">Knowledge</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="test-page">
+
+<div class="container">
+
+
+<!-- INTRO -->
+
+<div id="logicIntro" class="test-intro">
+
+    <p class="section-label">COGNIFY TEST</p>
+
+    <h1>Logic Test</h1>
+
+    <p>
+        Uji kemampuanmu dalam memahami pola,
+        hubungan, dan memecahkan masalah secara logis.
+    </p>
+
+
+    <div class="test-info">
+
+        <div>
+            <strong>10</strong>
+            <span>Questions</span>
+        </div>
+
+        <div>
+            <strong>5</strong>
+            <span>Minutes</span>
+        </div>
+
+        <div>
+            <strong>Logic</strong>
+            <span>Reasoning</span>
+        </div>
+
+    </div>
+
+
+    <button id="startLogicBtn" class="primary-button">
+        Start Test →
+    </button>
+
+</div>
+
+
+
+<!-- QUIZ -->
+
+<div id="logicQuiz" style="display:none;">
+
+    <div class="test-top">
+
+        <div>
+            Question
+            <strong>
+                <span id="logicCurrent">1</span>/10
+            </strong>
+        </div>
+
+        <div id="logicTimer">
+            05:00
+        </div>
+
+    </div>
+
+
+    <div class="progress-container">
+
+        <div
+            id="logicProgress"
+            class="progress-bar">
+        </div>
+
+    </div>
+
+
+    <div class="memory-card">
+
+        <p class="section-label">
+            LOGIC QUESTION
+        </p>
+
+        <h2 id="logicQuestion">
+            Question
+        </h2>
+
+    </div>
+
+
+    <div
+        id="logicOptions"
+        class="memory-options">
+    </div>
+
+
+    <button
+        id="logicNext"
+        class="primary-button"
+        style="display:none; margin-top:25px;">
+
+        Next →
+
+    </button>
+
+</div>
+
+
+
+<!-- RESULT -->
+
+<div
+    id="logicResult"
+    class="test-result"
+    style="display:none;">
+
+    <p class="section-label">
+        TEST COMPLETE
+    </p>
+
+    <h1>
+        Your Logic Result
+    </h1>
+
+
+    <div class="result-score">
+
+        <span id="logicScore">
+            0
+        </span>
+
+        <small>
+            / 10
+        </small>
+
+    </div>
+
+
+    <h2 id="logicLevel">
+        Good
+    </h2>
+
+
+    <p id="logicMessage"></p>
+
+
+    <div class="result-actions">
+
+        <button
+            id="logicRestart"
+            class="primary-button">
+
+            Try Again
+
+        </button>
+
+
+        <a
+            href="index.html"
+            class="secondary-button">
+
+            Back to Cognify
+
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h2>COGNIFY</h2>
+
+        <p>
+            Understand. Think. Discover.
+        </p>
+
+        <p>
+            © 2026 Cognify. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="logic.js"></script>
+
+</body>
+</html>
