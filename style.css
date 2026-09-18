@@ -2108,4 +2108,23 @@ footer {
     }
 
 }
+   /* ================================
+   USE MY ZODIAC
+================================ */
+
+.zodiac-daily-link {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #292929;
+    text-align: center;
+}
+
+.zodiac-daily-link p {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.zodiac-daily-link .btn {
+    cursor: pointer;
+}
    
