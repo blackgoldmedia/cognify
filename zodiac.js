@@ -34,6 +34,20 @@ const zodiacQuality =
 
 const zodiacDescription =
     document.getElementById("zodiacDescription");
+const zodiacStrength =
+    document.getElementById("zodiacStrength");
+
+const zodiacChallenge =
+    document.getElementById("zodiacChallenge");
+
+const zodiacLove =
+    document.getElementById("zodiacLove");
+
+const zodiacCareer =
+    document.getElementById("zodiacCareer");
+
+const zodiacLuckyNumber =
+    document.getElementById("zodiacLuckyNumber");
 
 
 /* =================================
