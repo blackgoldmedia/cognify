@@ -1,6 +1,6 @@
-/* ================================
+/* =================================
    COGNIFY — ZODIAC
-================================ */
+================================= */
 
 const zodiacButton =
     document.getElementById("zodiacButton");
@@ -36,287 +36,638 @@ const zodiacDescription =
     document.getElementById("zodiacDescription");
 
 
+/* =================================
+   TOMBOL ZODIAK
+================================= */
+
 zodiacButton.addEventListener(
     "click",
-    findZodiac
+    cariZodiak
 );
 
 
-function findZodiac() {
+/* =================================
+   MENENTUKAN ZODIAK
+================================= */
 
-    const day =
+function cariZodiak() {
+
+    const hari =
         Number(birthDay.value);
 
-    const month =
+    const bulan =
         Number(birthMonth.value);
 
 
     if (
-        !day ||
-        !month ||
-        day < 1 ||
-        day > 31
+        !hari ||
+        !bulan ||
+        hari < 1 ||
+        hari > 31
     ) {
 
         alert(
-            "Please enter a valid birth date."
+            "Silakan masukkan tanggal lahir yang valid."
         );
 
         return;
     }
 
 
-    let zodiac;
+    let zodiak;
 
+
+    /* ARIES */
 
     if (
-        (month === 3 && day >= 21) ||
-        (month === 4 && day <= 19)
+        (bulan === 3 && hari >= 21) ||
+        (bulan === 4 && hari <= 19)
     ) {
 
-        zodiac = {
-            symbol: "♈",
-            name: "Aries",
-            date: "March 21 – April 19",
-            element: "Fire",
-            planet: "Mars",
-            quality: "Cardinal",
-            description:
-                "Aries is traditionally associated with energy, initiative, confidence, and a willingness to take action."
+        zodiak = {
+
+            simbol: "♈",
+
+            nama: "Aries",
+
+            tanggal:
+                "21 Maret – 19 April",
+
+            elemen:
+                "Api",
+
+            planet:
+                "Mars",
+
+            kualitas:
+                "Kardinal",
+
+            deskripsi:
+                "Aries secara tradisional dikaitkan dengan keberanian, energi, inisiatif, dan semangat untuk memulai sesuatu.",
+
+            kelebihan:
+                "Berani, energik, percaya diri",
+
+            tantangan:
+                "Impulsif, mudah terburu-buru",
+
+            cinta:
+                "Romantis, bersemangat, dan terus terang",
+
+            karier:
+                "Kepemimpinan, bisnis, olahraga, dan bidang yang membutuhkan keberanian",
+
+            angka:
+                "1, 9, 18"
+
         };
 
-    }
 
-    else if (
-        (month === 4 && day >= 20) ||
-        (month === 5 && day <= 20)
+    /* TAURUS */
+
+    } else if (
+        (bulan === 4 && hari >= 20) ||
+        (bulan === 5 && hari <= 20)
     ) {
 
-        zodiac = {
-            symbol: "♉",
-            name: "Taurus",
-            date: "April 20 – May 20",
-            element: "Earth",
-            planet: "Venus",
-            quality: "Fixed",
-            description:
-                "Taurus is traditionally associated with stability, patience, determination, and appreciation of comfort."
+        zodiak = {
+
+            simbol: "♉",
+
+            nama: "Taurus",
+
+            tanggal:
+                "20 April – 20 Mei",
+
+            elemen:
+                "Bumi",
+
+            planet:
+                "Venus",
+
+            kualitas:
+                "Tetap",
+
+            deskripsi:
+                "Taurus secara tradisional dikaitkan dengan kestabilan, kesabaran, ketekunan, dan kecintaan terhadap kenyamanan.",
+
+            kelebihan:
+                "Sabar, setia, stabil",
+
+            tantangan:
+                "Keras kepala, sulit menerima perubahan",
+
+            cinta:
+                "Setia, perhatian, dan menghargai hubungan yang stabil",
+
+            karier:
+                "Keuangan, bisnis, seni, desain, dan pekerjaan yang membutuhkan ketekunan",
+
+            angka:
+                "2, 6, 15"
+
         };
 
-    }
 
-    else if (
-        (month === 5 && day >= 21) ||
-        (month === 6 && day <= 20)
+    /* GEMINI */
+
+    } else if (
+        (bulan === 5 && hari >= 21) ||
+        (bulan === 6 && hari <= 20)
     ) {
 
-        zodiac = {
-            symbol: "♊",
-            name: "Gemini",
-            date: "May 21 – June 20",
-            element: "Air",
-            planet: "Mercury",
-            quality: "Mutable",
-            description:
-                "Gemini is traditionally associated with curiosity, communication, adaptability, and intellectual exploration."
+        zodiak = {
+
+            simbol: "♊",
+
+            nama: "Gemini",
+
+            tanggal:
+                "21 Mei – 20 Juni",
+
+            elemen:
+                "Udara",
+
+            planet:
+                "Merkurius",
+
+            kualitas:
+                "Berubah",
+
+            deskripsi:
+                "Gemini secara tradisional dikaitkan dengan rasa ingin tahu, komunikasi, kemampuan beradaptasi, dan ketertarikan terhadap berbagai ide.",
+
+            kelebihan:
+                "Komunikatif, cepat belajar, fleksibel",
+
+            tantangan:
+                "Mudah bosan, sulit fokus",
+
+            cinta:
+                "Menyukai komunikasi dan hubungan yang penuh variasi",
+
+            karier:
+                "Komunikasi, media, pendidikan, teknologi, dan pekerjaan kreatif",
+
+            angka:
+                "3, 5, 14"
+
         };
 
-    }
 
-    else if (
-        (month === 6 && day >= 21) ||
-        (month === 7 && day <= 22)
+    /* CANCER */
+
+    } else if (
+        (bulan === 6 && hari >= 21) ||
+        (bulan === 7 && hari <= 22)
     ) {
 
-        zodiac = {
-            symbol: "♋",
-            name: "Cancer",
-            date: "June 21 – July 22",
-            element: "Water",
-            planet: "Moon",
-            quality: "Cardinal",
-            description:
-                "Cancer is traditionally associated with emotional sensitivity, care, intuition, and strong connections with others."
+        zodiak = {
+
+            simbol: "♋",
+
+            nama: "Cancer",
+
+            tanggal:
+                "21 Juni – 22 Juli",
+
+            elemen:
+                "Air",
+
+            planet:
+                "Bulan",
+
+            kualitas:
+                "Kardinal",
+
+            deskripsi:
+                "Cancer secara tradisional dikaitkan dengan kepedulian, intuisi, kepekaan emosional, dan hubungan yang kuat dengan keluarga.",
+
+            kelebihan:
+                "Peduli, intuitif, penyayang",
+
+            tantangan:
+                "Sensitif, mudah terbawa perasaan",
+
+            cinta:
+                "Penuh perhatian dan menghargai kedekatan emosional",
+
+            karier:
+                "Pendidikan, pelayanan, psikologi, kuliner, dan pekerjaan yang berhubungan dengan manusia",
+
+            angka:
+                "2, 7, 11"
+
         };
 
-    }
 
-    else if (
-        (month === 7 && day >= 23) ||
-        (month === 8 && day <= 22)
+    /* LEO */
+
+    } else if (
+        (bulan === 7 && hari >= 23) ||
+        (bulan === 8 && hari <= 22)
     ) {
 
-        zodiac = {
-            symbol: "♌",
-            name: "Leo",
-            date: "July 23 – August 22",
-            element: "Fire",
-            planet: "Sun",
-            quality: "Fixed",
-            description:
-                "Leo is traditionally associated with confidence, creativity, warmth, and self-expression."
+        zodiak = {
+
+            simbol: "♌",
+
+            nama: "Leo",
+
+            tanggal:
+                "23 Juli – 22 Agustus",
+
+            elemen:
+                "Api",
+
+            planet:
+                "Matahari",
+
+            kualitas:
+                "Tetap",
+
+            deskripsi:
+                "Leo secara tradisional dikaitkan dengan kepercayaan diri, kreativitas, kehangatan, dan ekspresi diri.",
+
+            kelebihan:
+                "Percaya diri, kreatif, berani",
+
+            tantangan:
+                "Ego tinggi, keras kepala",
+
+            cinta:
+                "Hangat, romantis, dan loyal",
+
+            karier:
+                "Kepemimpinan, hiburan, bisnis, seni, dan pekerjaan kreatif",
+
+            angka:
+                "1, 5, 19"
+
         };
 
-    }
 
-    else if (
-        (month === 8 && day >= 23) ||
-        (month === 9 && day <= 22)
+    /* VIRGO */
+
+    } else if (
+        (bulan === 8 && hari >= 23) ||
+        (bulan === 9 && hari <= 22)
     ) {
 
-        zodiac = {
-            symbol: "♍",
-            name: "Virgo",
-            date: "August 23 – September 22",
-            element: "Earth",
-            planet: "Mercury",
-            quality: "Mutable",
-            description:
-                "Virgo is traditionally associated with organization, attention to detail, practicality, and analysis."
+        zodiak = {
+
+            simbol: "♍",
+
+            nama: "Virgo",
+
+            tanggal:
+                "23 Agustus – 22 September",
+
+            elemen:
+                "Bumi",
+
+            planet:
+                "Merkurius",
+
+            kualitas:
+                "Berubah",
+
+            deskripsi:
+                "Virgo secara tradisional dikaitkan dengan ketelitian, keteraturan, analisis, dan pendekatan praktis.",
+
+            kelebihan:
+                "Teliti, terorganisir, analitis",
+
+            tantangan:
+                "Terlalu kritis, perfeksionis",
+
+            cinta:
+                "Serius, perhatian, dan menunjukkan kasih sayang melalui tindakan",
+
+            karier:
+                "Analisis, kesehatan, teknologi, penelitian, dan administrasi",
+
+            angka:
+                "5, 14, 23"
+
         };
 
-    }
 
-    else if (
-        (month === 9 && day >= 23) ||
-        (month === 10 && day <= 22)
+    /* LIBRA */
+
+    } else if (
+        (bulan === 9 && hari >= 23) ||
+        (bulan === 10 && hari <= 22)
     ) {
 
-        zodiac = {
-            symbol: "♎",
-            name: "Libra",
-            date: "September 23 – October 22",
-            element: "Air",
-            planet: "Venus",
-            quality: "Cardinal",
-            description:
-                "Libra is traditionally associated with balance, cooperation, diplomacy, and appreciation of harmony."
+        zodiak = {
+
+            simbol: "♎",
+
+            nama: "Libra",
+
+            tanggal:
+                "23 September – 22 Oktober",
+
+            elemen:
+                "Udara",
+
+            planet:
+                "Venus",
+
+            kualitas:
+                "Kardinal",
+
+            deskripsi:
+                "Libra secara tradisional dikaitkan dengan keseimbangan, kerja sama, diplomasi, dan penghargaan terhadap keharmonisan.",
+
+            kelebihan:
+                "Diplomatis, ramah, adil",
+
+            tantangan:
+                "Sulit mengambil keputusan, terlalu mempertimbangkan pendapat orang lain",
+
+            cinta:
+                "Romantis dan menghargai hubungan yang harmonis",
+
+            karier:
+                "Hukum, diplomasi, desain, seni, dan hubungan masyarakat",
+
+            angka:
+                "6, 15, 24"
+
         };
 
-    }
 
-    else if (
-        (month === 10 && day >= 23) ||
-        (month === 11 && day <= 21)
+    /* SCORPIO */
+
+    } else if (
+        (bulan === 10 && hari >= 23) ||
+        (bulan === 11 && hari <= 21)
     ) {
 
-        zodiac = {
-            symbol: "♏",
-            name: "Scorpio",
-            date: "October 23 – November 21",
-            element: "Water",
-            planet: "Pluto",
-            quality: "Fixed",
-            description:
-                "Scorpio is traditionally associated with intensity, determination, privacy, and emotional depth."
+        zodiak = {
+
+            simbol: "♏",
+
+            nama: "Scorpio",
+
+            tanggal:
+                "23 Oktober – 21 November",
+
+            elemen:
+                "Air",
+
+            planet:
+                "Pluto",
+
+            kualitas:
+                "Tetap",
+
+            deskripsi:
+                "Scorpio secara tradisional dikaitkan dengan intensitas, keteguhan, privasi, dan kedalaman emosional.",
+
+            kelebihan:
+                "Fokus, berani, loyal",
+
+            tantangan:
+                "Mudah curiga, posesif",
+
+            cinta:
+                "Intens, setia, dan menghargai kedalaman hubungan",
+
+            karier:
+                "Penelitian, psikologi, investigasi, teknologi, dan bidang yang membutuhkan ketelitian",
+
+            angka:
+                "8, 11, 22"
+
         };
 
-    }
 
-    else if (
-        (month === 11 && day >= 22) ||
-        (month === 12 && day <= 21)
+    /* SAGITTARIUS */
+
+    } else if (
+        (bulan === 11 && hari >= 22) ||
+        (bulan === 12 && hari <= 21)
     ) {
 
-        zodiac = {
-            symbol: "♐",
-            name: "Sagittarius",
-            date: "November 22 – December 21",
-            element: "Fire",
-            planet: "Jupiter",
-            quality: "Mutable",
-            description:
-                "Sagittarius is traditionally associated with exploration, optimism, independence, and love of learning."
+        zodiak = {
+
+            simbol: "♐",
+
+            nama: "Sagitarius",
+
+            tanggal:
+                "22 November – 21 Desember",
+
+            elemen:
+                "Api",
+
+            planet:
+                "Jupiter",
+
+            kualitas:
+                "Berubah",
+
+            deskripsi:
+                "Sagitarius secara tradisional dikaitkan dengan petualangan, optimisme, kebebasan, dan kecintaan terhadap pengetahuan.",
+
+            kelebihan:
+                "Optimis, terbuka, suka belajar",
+
+            tantangan:
+                "Kurang sabar, terlalu terus terang",
+
+            cinta:
+                "Menyukai kebebasan dan hubungan yang penuh petualangan",
+
+            karier:
+                "Pendidikan, perjalanan, media, olahraga, dan pekerjaan internasional",
+
+            angka:
+                "3, 9, 21"
+
         };
 
-    }
 
-    else if (
-        (month === 12 && day >= 22) ||
-        (month === 1 && day <= 19)
+    /* CAPRICORN */
+
+    } else if (
+        (bulan === 12 && hari >= 22) ||
+        (bulan === 1 && hari <= 19)
     ) {
 
-        zodiac = {
-            symbol: "♑",
-            name: "Capricorn",
-            date: "December 22 – January 19",
-            element: "Earth",
-            planet: "Saturn",
-            quality: "Cardinal",
-            description:
-                "Capricorn is traditionally associated with discipline, ambition, responsibility, and persistence."
+        zodiak = {
+
+            simbol: "♑",
+
+            nama: "Capricorn",
+
+            tanggal:
+                "22 Desember – 19 Januari",
+
+            elemen:
+                "Bumi",
+
+            planet:
+                "Saturnus",
+
+            kualitas:
+                "Kardinal",
+
+            deskripsi:
+                "Capricorn secara tradisional dikaitkan dengan disiplin, ambisi, tanggung jawab, dan ketekunan.",
+
+            kelebihan:
+                "Disiplin, bertanggung jawab, tekun",
+
+            tantangan:
+                "Terlalu serius, sulit bersantai",
+
+            cinta:
+                "Serius, setia, dan mencari hubungan yang stabil",
+
+            karier:
+                "Manajemen, bisnis, keuangan, pemerintahan, dan bidang profesional",
+
+            angka:
+                "4, 8, 22"
+
         };
 
-    }
 
-    else if (
-        (month === 1 && day >= 20) ||
-        (month === 2 && day <= 18)
+    /* AQUARIUS */
+
+    } else if (
+        (bulan === 1 && hari >= 20) ||
+        (bulan === 2 && hari <= 18)
     ) {
 
-        zodiac = {
-            symbol: "♒",
-            name: "Aquarius",
-            date: "January 20 – February 18",
-            element: "Air",
-            planet: "Uranus",
-            quality: "Fixed",
-            description:
-                "Aquarius is traditionally associated with independence, originality, ideas, and interest in innovation."
+        zodiak = {
+
+            simbol: "♒",
+
+            nama: "Aquarius",
+
+            tanggal:
+                "20 Januari – 18 Februari",
+
+            elemen:
+                "Udara",
+
+            planet:
+                "Uranus",
+
+            kualitas:
+                "Tetap",
+
+            deskripsi:
+                "Aquarius secara tradisional dikaitkan dengan kemandirian, orisinalitas, ide-ide baru, dan ketertarikan terhadap inovasi.",
+
+            kelebihan:
+                "Kreatif, mandiri, inovatif",
+
+            tantangan:
+                "Sulit ditebak, terlalu independen",
+
+            cinta:
+                "Menghargai kebebasan, persahabatan, dan hubungan intelektual",
+
+            karier:
+                "Teknologi, penelitian, inovasi, sosial, dan bidang kreatif",
+
+            angka:
+                "4, 7, 11"
+
+        };
+
+
+    /* PISCES */
+
+    } else {
+
+        zodiak = {
+
+            simbol: "♓",
+
+            nama: "Pisces",
+
+            tanggal:
+                "19 Februari – 20 Maret",
+
+            elemen:
+                "Air",
+
+            planet:
+                "Neptunus",
+
+            kualitas:
+                "Berubah",
+
+            deskripsi:
+                "Pisces secara tradisional dikaitkan dengan imajinasi, empati, intuisi, dan kreativitas.",
+
+            kelebihan:
+                "Empati, kreatif, intuitif",
+
+            tantangan:
+                "Mudah terbawa perasaan, sulit menentukan batas",
+
+            cinta:
+                "Romantis, penuh perhatian, dan emosional",
+
+            karier:
+                "Seni, musik, psikologi, pelayanan, dan pekerjaan kreatif",
+
+            angka:
+                "3, 7, 12"
+
         };
 
     }
 
-    else {
 
-        zodiac = {
-            symbol: "♓",
-            name: "Pisces",
-            date: "February 19 – March 20",
-            element: "Water",
-            planet: "Neptune",
-            quality: "Mutable",
-            description:
-                "Pisces is traditionally associated with imagination, empathy, intuition, and creativity."
-        };
-
-    }
-
-
-    showZodiacResult(zodiac);
+    tampilkanZodiak(zodiak);
 
 }
 
 
-function showZodiacResult(zodiac) {
+/* =================================
+   MENAMPILKAN HASIL
+================================= */
+
+function tampilkanZodiak(zodiak) {
 
     zodiacSymbol.textContent =
-        zodiac.symbol;
+        zodiak.simbol;
 
     zodiacName.textContent =
-        zodiac.name;
+        zodiak.nama;
 
     zodiacDate.textContent =
-        zodiac.date;
+        zodiak.tanggal;
 
     zodiacElement.textContent =
-        zodiac.element;
+        zodiak.elemen;
 
     zodiacPlanet.textContent =
-        zodiac.planet;
+        zodiak.planet;
 
     zodiacQuality.textContent =
-        zodiac.quality;
+        zodiak.kualitas;
 
     zodiacDescription.textContent =
-        zodiac.description;
+        zodiak.deskripsi;
+
 
     zodiacResult.style.display =
         "block";
+
 
     zodiacResult.scrollIntoView({
         behavior: "smooth",
         block: "center"
     });
 
-}
+           }
