@@ -1952,3 +1952,160 @@ footer {
 
 }
 
+   /* ================================
+   ZODIAC DAILY
+================================ */
+
+.zodiac-daily {
+    max-width: 900px;
+    margin: 80px auto 0;
+}
+
+.zodiac-daily h3 {
+    font-size: 28px;
+}
+
+.daily-form {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    padding: 30px;
+    background: #111;
+    border: 1px solid #292929;
+}
+
+.daily-form label {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.daily-form select {
+    min-width: 230px;
+    padding: 13px;
+    background: #0b0b0b;
+    border: 1px solid #333;
+    color: #fff;
+    font-family: inherit;
+}
+
+.daily-result {
+    margin-top: 25px;
+    padding: 35px;
+    background: #111;
+    border: 1px solid #292929;
+}
+
+.daily-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #292929;
+}
+
+.daily-symbol {
+    font-size: 60px;
+    color: #d6a62c;
+}
+
+.daily-header p {
+    margin: 0 0 5px;
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.daily-header h3 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.daily-message {
+    margin: 25px 0;
+    padding: 22px;
+    background: #151515;
+    border-left: 3px solid #d6a62c;
+}
+
+.daily-message span {
+    display: block;
+    color: #d6a62c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.daily-message p {
+    color: #bbb;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.daily-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.daily-card {
+    padding: 20px;
+    background: #151515;
+    border: 1px solid #292929;
+}
+
+.daily-card span {
+    display: block;
+    color: #d6a62c;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.daily-card p {
+    margin: 0;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .zodiac-daily {
+        margin-top: 60px;
+    }
+
+    .daily-form {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 15px;
+    }
+
+    .daily-form select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .daily-result {
+        padding: 25px 15px;
+    }
+
+    .daily-header {
+        gap: 15px;
+    }
+
+    .daily-symbol {
+        font-size: 48px;
+    }
+
+    .daily-header h3 {
+        font-size: 25px;
+    }
+
+    .daily-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+   
