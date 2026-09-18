@@ -2128,3 +2128,69 @@ footer {
     cursor: pointer;
 }
    
+/* ================================
+   ZODIAC PROFILE
+================================ */
+
+.zodiac-profile {
+    max-width: 900px;
+    margin: 80px auto 0;
+}
+
+.zodiac-profile h3 {
+    font-size: 28px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.profile-card {
+    padding: 25px;
+    background: #111;
+    border: 1px solid #292929;
+}
+
+.profile-card span {
+    display: block;
+    margin-bottom: 10px;
+    color: #d6a62c;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.profile-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.profile-card p {
+    margin: 0;
+    color: #888;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .zodiac-profile {
+        margin-top: 60px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        padding: 20px;
+    }
+
+   }
+   
