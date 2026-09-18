@@ -342,52 +342,154 @@
 
 
         <!-- ZODIAC -->
-        <section class="section" id="zodiac">
+<section class="section" id="zodiac">
 
-            <div class="container">
+    <div class="container">
 
-                <div class="section-heading">
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">
+                    EXPLORE THE STARS
+                </p>
+
+                <h2>
+                    Zodiac
+                </h2>
+            </div>
+
+            <p>
+                Discover your zodiac sign and explore
+                interesting information about it.
+            </p>
+
+        </div>
+
+
+        <div class="zodiac-box">
+
+            <div class="zodiac-form">
+
+                <h3>
+                    Discover Your Zodiac
+                </h3>
+
+                <p>
+                    Enter your date of birth.
+                </p>
+
+                <div class="zodiac-inputs">
 
                     <div>
+                        <label for="birthDay">
+                            Day
+                        </label>
 
-                        <p class="small-title">
-                            EXPLORE THE STARS
-                        </p>
+                        <input
+                            type="number"
+                            id="birthDay"
+                            min="1"
+                            max="31"
+                            placeholder="DD">
+                    </div>
 
-                        <h2>
-                            Zodiac
-                        </h2>
+
+                    <div>
+                        <label for="birthMonth">
+                            Month
+                        </label>
+
+                        <select id="birthMonth">
+
+                            <option value="">
+                                Select Month
+                            </option>
+
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+
+                        </select>
 
                     </div>
 
-                    <p>
-                        Discover interesting information
-                        about the twelve zodiac signs.
-                    </p>
-
                 </div>
 
 
-                <div class="zodiac-grid">
+                <button
+                    id="zodiacButton"
+                    class="btn primary">
 
-                    <div>♈<span>Aries</span></div>
-                    <div>♉<span>Taurus</span></div>
-                    <div>♊<span>Gemini</span></div>
-                    <div>♋<span>Cancer</span></div>
-                    <div>♌<span>Leo</span></div>
-                    <div>♍<span>Virgo</span></div>
-                    <div>♎<span>Libra</span></div>
-                    <div>♏<span>Scorpio</span></div>
-                    <div>♐<span>Sagittarius</span></div>
-                    <div>♑<span>Capricorn</span></div>
-                    <div>♒<span>Aquarius</span></div>
-                    <div>♓<span>Pisces</span></div>
+                    Discover My Zodiac →
 
-                </div>
+                </button>
 
             </div>
 
-        </section>
+
+            <!-- RESULT -->
+
+            <div
+                id="zodiacResult"
+                class="zodiac-result"
+                style="display:none;">
+
+                <div
+                    id="zodiacSymbol"
+                    class="zodiac-symbol">
+                </div>
+
+                <p class="small-title">
+                    YOUR ZODIAC SIGN
+                </p>
+
+                <h2 id="zodiacName">
+                    Zodiac
+                </h2>
+
+                <p id="zodiacDate">
+                </p>
+
+                <div class="zodiac-details">
+
+                    <div>
+                        <strong>Element</strong>
+                        <span id="zodiacElement"></span>
+                    </div>
+
+                    <div>
+                        <strong>Planet</strong>
+                        <span id="zodiacPlanet"></span>
+                    </div>
+
+                    <div>
+                        <strong>Quality</strong>
+                        <span id="zodiacQuality"></span>
+                    </div>
+
+                </div>
+
+                <p
+                    id="zodiacDescription"
+                    class="zodiac-description">
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- KNOWLEDGE -->
