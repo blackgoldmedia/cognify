@@ -1363,5 +1363,270 @@ footer {
 
 }
 
+/* ================================
+   MEMORY TEST
+================================ */
 
+.test-page {
+    min-height: 70vh;
+    padding: 80px 0;
+}
+
+.test-intro {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.test-intro h1 {
+    font-size: 48px;
+    margin: 10px 0 15px;
+}
+
+.test-intro > p:not(.section-label) {
+    color: #999;
+    margin-bottom: 35px;
+}
+
+.section-label {
+    color: #d6a62c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.test-info {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 35px 0;
+}
+
+.test-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-info strong {
+    color: #d6a62c;
+    font-size: 24px;
+}
+
+.test-info span {
+    color: #777;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #d6a62c;
+    color: #0b0b0b;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.primary-button:hover {
+    background: #f0c34f;
+    transform: translateY(-2px);
+}
+
+/* QUIZ */
+
+.test-top {
+    max-width: 650px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 14px;
+}
+
+.test-top strong {
+    color: #fff;
+}
+
+#memoryTimer {
+    color: #d6a62c;
+    font-weight: bold;
+}
+
+.progress-container {
+    max-width: 650px;
+    height: 5px;
+    margin: 0 auto 30px;
+    background: #222;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #d6a62c;
+    transition: width 0.3s ease;
+}
+
+.memory-card {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 40px 25px;
+    background: #111;
+    border: 1px solid #292929;
+    text-align: center;
+}
+
+.memory-display {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #d6a62c;
+    margin: 25px 0;
+}
+
+.memory-instruction {
+    color: #888;
+}
+
+.memory-options {
+    max-width: 650px;
+    margin: 25px auto;
+    display: grid;
+    gap: 12px;
+}
+
+.memory-option {
+    width: 100%;
+    padding: 18px;
+    background: #151515;
+    border: 1px solid #292929;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.memory-option:hover {
+    border-color: #d6a62c;
+}
+
+.memory-option.selected {
+    border-color: #d6a62c;
+}
+
+.memory-option.correct {
+    background: #172016;
+    border-color: #4c8f4c;
+}
+
+.memory-option.wrong {
+    background: #241414;
+    border-color: #9b4444;
+}
+
+.memory-option:disabled {
+    cursor: default;
+}
+
+#memoryNext {
+    margin-top: 25px;
+}
+
+.test-result {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.test-result h1 {
+    margin: 10px 0 25px;
+}
+
+.result-score {
+    font-size: 70px;
+    font-weight: bold;
+    color: #d6a62c;
+    margin: 20px 0;
+}
+
+.result-score small {
+    font-size: 22px;
+    color: #666;
+}
+
+#memoryLevel {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#memoryMessage {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.result-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 1px solid #444;
+    color: #ccc;
+    transition: 0.2s;
+}
+
+.secondary-button:hover {
+    border-color: #d6a62c;
+    color: #d6a62c;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .test-page {
+        padding: 50px 0;
+    }
+
+    .test-intro h1 {
+        font-size: 36px;
+    }
+
+    .test-info {
+        gap: 25px;
+    }
+
+    .memory-card {
+        padding: 30px 15px;
+    }
+
+    .memory-display {
+        font-size: 21px;
+        letter-spacing: 2px;
+    }
+
+    .memory-option {
+        padding: 16px;
+    }
+
+    .test-top {
+        font-size: 13px;
+    }
+
+    .result-score {
+        font-size: 55px;
+    }
+}
 
