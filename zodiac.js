@@ -684,4 +684,7 @@ function tampilkanZodiak(zodiak) {
         block: "center"
     });
 
-           }
+          if (typeof updateZodiacProfile === "function") {
+    updateZodiacProfile(zodiak.nama);
+          }
+}
