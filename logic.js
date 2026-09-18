@@ -1,36 +1,50 @@
 /* =================================
    COGNIFY — LOGIC TEST
 ================================= */
-
 const logicQuestions = [
+
+    // =========================
+    // EASY
+    // =========================
 
     {
         question: "2, 4, 6, 8, ?",
         options: ["9", "10", "11", "12"],
-        answer: 1
+        answer: 1,
+        difficulty: "Easy"
     },
+
+    {
+        question: "5, 10, 15, 20, ?",
+        options: ["22", "24", "25", "30"],
+        answer: 2,
+        difficulty: "Easy"
+    },
+
+    {
+        question: "A, C, E, G, ?",
+        options: ["H", "I", "J", "K"],
+        answer: 1,
+        difficulty: "Easy"
+    },
+
+
+    // =========================
+    // MEDIUM
+    // =========================
 
     {
         question: "3, 6, 12, 24, ?",
         options: ["36", "42", "48", "54"],
-        answer: 2
+        answer: 2,
+        difficulty: "Medium"
     },
 
     {
         question: "1, 4, 9, 16, ?",
         options: ["20", "24", "25", "27"],
-        answer: 2
-    },
-
-    {
-        question: "Jika semua A adalah B, dan semua B adalah C, maka...",
-        options: [
-            "Semua C adalah A",
-            "Semua A adalah C",
-            "Tidak ada A yang C",
-            "Sebagian C bukan B"
-        ],
-        answer: 1
+        answer: 2,
+        difficulty: "Medium"
     },
 
     {
@@ -41,55 +55,65 @@ const logicQuestions = [
             "Makan",
             "Dapur"
         ],
-        answer: 2
+        answer: 2,
+        difficulty: "Medium"
     },
 
     {
-        question: "5, 10, 20, 40, ?",
-        options: ["60", "70", "80", "100"],
-        answer: 2
-    },
-
-    {
-        question: "Jika hari ini Senin, 10 hari kemudian adalah hari...",
+        question: "Jika semua A adalah B, dan semua B adalah C, maka...",
         options: [
-            "Rabu",
-            "Kamis",
-            "Jumat",
-            "Sabtu"
+            "Semua C adalah A",
+            "Semua A adalah C",
+            "Tidak ada A yang C",
+            "Sebagian C bukan B"
         ],
-        answer: 1
+        answer: 1,
+        difficulty: "Medium"
     },
 
-    {
-        question: "Semua burung memiliki sayap. Penguin adalah burung. Maka...",
-        options: [
-            "Penguin tidak memiliki sayap",
-            "Penguin memiliki sayap",
-            "Semua yang memiliki sayap adalah penguin",
-            "Penguin bukan burung"
-        ],
-        answer: 1
-    },
+
+    // =========================
+    // HARD
+    // =========================
 
     {
         question: "7, 10, 16, 25, 37, ?",
-        options: ["49", "50", "52", "54"],
-        answer: 2
+        options: [
+            "49",
+            "50",
+            "52",
+            "54"
+        ],
+        answer: 2,
+        difficulty: "Hard"
     },
 
     {
-        question: "Jika 2 + 3 = 10, 3 + 4 = 21, maka 4 + 5 = ?",
+        question: "2, 6, 12, 20, 30, ?",
         options: [
-            "30",
-            "36",
             "40",
-            "45"
+            "42",
+            "44",
+            "46"
         ],
-        answer: 2
+        answer: 1,
+        difficulty: "Hard"
+    },
+
+    {
+        question: "Semua dokter adalah manusia. Sebagian manusia adalah musisi. Kesimpulan yang pasti adalah...",
+        options: [
+            "Semua dokter adalah musisi",
+            "Sebagian dokter adalah musisi",
+            "Semua dokter adalah manusia",
+            "Tidak ada dokter yang musisi"
+        ],
+        answer: 2,
+        difficulty: "Hard"
     }
 
 ];
+
 
 
 /* =================================
