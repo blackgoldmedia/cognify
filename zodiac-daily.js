@@ -254,3 +254,57 @@ dailyZodiacButton.addEventListener(
     "click",
     tampilkanZodiakHarian
 );
+
+// ========================================
+// GUNAKAN ZODIAK SAYA
+// ========================================
+
+const useMyZodiac =
+    document.getElementById("useMyZodiac");
+
+useMyZodiac.addEventListener(
+    "click",
+    function () {
+
+        const namaZodiak =
+            document
+                .getElementById("zodiacName")
+                .textContent
+                .trim();
+
+        const mappingZodiak = {
+
+            "Aries": "aries",
+            "Taurus": "taurus",
+            "Gemini": "gemini",
+            "Cancer": "cancer",
+            "Leo": "leo",
+            "Virgo": "virgo",
+            "Libra": "libra",
+            "Scorpio": "scorpio",
+            "Sagitarius": "sagittarius",
+            "Capricorn": "capricorn",
+            "Aquarius": "aquarius",
+            "Pisces": "pisces"
+
+        };
+
+        const kodeZodiak =
+            mappingZodiak[namaZodiak];
+
+        if (!kodeZodiak) {
+
+            alert(
+                "Silakan cari zodiak berdasarkan tanggal lahir terlebih dahulu."
+            );
+
+            return;
+        }
+
+        dailyZodiac.value =
+            kodeZodiak;
+
+        tampilkanZodiakHarian();
+
+    }
+);
