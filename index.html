@@ -829,6 +829,106 @@
 
             <p id="dailyMessage"></p>
 
+<!-- ZODIAC DAILY -->
+
+<div class="zodiac-daily">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="small-title">
+                YOUR DAILY ZODIAC
+            </p>
+
+            <h3>
+                Zodiak Hari Ini
+            </h3>
+        </div>
+
+        <p>
+            Temukan pesan dan energi zodiak untuk hari ini.
+        </p>
+
+    </div>
+
+
+    <div class="daily-form">
+
+        <label for="dailyZodiac">
+            Pilih Zodiak
+        </label>
+
+        <select id="dailyZodiac">
+
+            <option value="">
+                Pilih zodiak
+            </option>
+
+            <option value="aries">Aries</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <option value="cancer">Cancer</option>
+            <option value="leo">Leo</option>
+            <option value="virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="scorpio">Scorpio</option>
+            <option value="sagittarius">Sagitarius</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="aquarius">Aquarius</option>
+            <option value="pisces">Pisces</option>
+
+        </select>
+
+
+        <button
+            class="btn primary"
+            id="dailyZodiacButton">
+
+            Lihat Zodiak Hari Ini
+
+        </button>
+
+    </div>
+
+
+    <div
+        class="daily-result"
+        id="dailyZodiacResult"
+        style="display:none;">
+
+        <div class="daily-header">
+
+            <div
+                class="daily-symbol"
+                id="dailySymbol">
+
+                ♈
+
+            </div>
+
+            <div>
+
+                <p>
+                    ENERGI HARI INI
+                </p>
+
+                <h3 id="dailyName">
+                    Aries
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="daily-message">
+
+            <span>
+                🌟 Pesan Hari Ini
+            </span>
+
+            <p id="dailyMessage"></p>
+
         </div>
 
 
@@ -888,6 +988,155 @@
             </div>
 
         </div>
+
+    </div>
+
+</div>
+
+
+<!-- ZODIAC PROFILE -->
+
+<div class="zodiac-profile">
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="small-title">
+                KNOW YOUR SIGN
+            </p>
+
+            <h3>
+                Profil Zodiak
+            </h3>
+
+        </div>
+
+        <p>
+            Kenali karakteristik dasar dari setiap zodiak.
+        </p>
+
+    </div>
+
+
+    <div class="profile-grid">
+
+
+        <!-- ELEMENT -->
+
+        <div class="profile-card">
+
+            <span>
+                🔥 Elemen
+            </span>
+
+            <strong id="profileElement">
+                —
+            </strong>
+
+            <p id="profileElementDescription">
+                —
+            </p>
+
+        </div>
+
+
+        <!-- PLANET -->
+
+        <div class="profile-card">
+
+            <span>
+                🪐 Planet
+            </span>
+
+            <strong id="profilePlanet">
+                —
+            </strong>
+
+            <p id="profilePlanetDescription">
+                —
+            </p>
+
+        </div>
+
+
+        <!-- QUALITY -->
+
+        <div class="profile-card">
+
+            <span>
+                ⚡ Kualitas
+            </span>
+
+            <strong id="profileQuality">
+                —
+            </strong>
+
+            <p id="profileQualityDescription">
+                —
+            </p>
+
+        </div>
+
+
+        <!-- COLOR -->
+
+        <div class="profile-card">
+
+            <span>
+                🎨 Warna
+            </span>
+
+            <strong id="profileColor">
+                —
+            </strong>
+
+            <p>
+                Warna yang secara tradisional
+                sering dikaitkan dengan zodiak ini.
+            </p>
+
+        </div>
+
+
+        <!-- NUMBER -->
+
+        <div class="profile-card">
+
+            <span>
+                🔢 Angka
+            </span>
+
+            <strong id="profileNumber">
+                —
+            </strong>
+
+            <p>
+                Angka yang digunakan sebagai simbol
+                keberuntungan dalam astrologi.
+            </p>
+
+        </div>
+
+
+        <!-- SYMBOL -->
+
+        <div class="profile-card">
+
+            <span>
+                ✨ Simbol
+            </span>
+
+            <strong id="profileSymbol">
+                —
+            </strong>
+
+            <p id="profileSymbolDescription">
+                —
+            </p>
+
+        </div>
+
 
     </div>
 
@@ -977,6 +1226,7 @@
     <script src="zodiac.js"></script>
     <script src="zodiac-compatibility.js"></script>
     <script src="zodiac-daily.js"></script>
+    <script src="zodiac-pofile.js"></script>        
 
 </body>
   </html>
